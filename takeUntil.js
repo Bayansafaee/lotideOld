@@ -20,7 +20,7 @@ const assertArrayEqual = (arr1, arr2) => {
 
 
 const takeUntil = function(array, callback) {
-  arrSlice = [];
+  const arrSlice = [];
   for (elm of array){
     if(callback(elm)){
       return arrSlice;
