@@ -21,13 +21,13 @@ const testObj = {
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
-}
+};
 
-const testKey1 = x => x.stars === 2
-const testKey2 = x => x.stars === 4
+const testKey1 = x => x.stars === 2;
+const testKey2 = x => x.stars === 4;
 
-const test1 = findKey(testObj, testKey1) // => "noma"
-const test2 = findKey(testObj, testKey2) // => "undefined"
+const test1 = findKey(testObj, testKey1); // => "noma"
+const test2 = findKey(testObj, testKey2); // => "undefined"
 
-assertEqual(test1, 'noma')
-assertEqual(test2, undefined)
+assertEqual(test1, 'noma');
+assertEqual(test2, undefined);

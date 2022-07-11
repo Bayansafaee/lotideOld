@@ -8,8 +8,8 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(string) {
   const results = {};
-  const stringMod = (string.replace(/\s+/g, ''))
-  for (const letter in stringMod) { 
+  const stringMod = (string.replace(/\s+/g, ''));
+  for (const letter in stringMod) {
     if (results[stringMod[letter]] === undefined) {
       results[stringMod[letter]] = 1;
     } else {

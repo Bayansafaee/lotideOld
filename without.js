@@ -20,13 +20,13 @@ const assertArrayEqual = (arr1, arr2) => {
 
 const without = (source, itemsToRemove) => {
   const newArr = source.filter(element => {
-      if (!itemsToRemove.includes(element)){
-        return true;
-      }
+    if (!itemsToRemove.includes(element)) {
+      return true;
     }
-  )
+  }
+  );
   return newArr;
-}
+};
 
 
 console.log(without([1, 2, 3], [1])); // => [2, 3]

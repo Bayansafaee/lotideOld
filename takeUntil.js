@@ -21,11 +21,11 @@ const assertArrayEqual = (arr1, arr2) => {
 
 const takeUntil = function(array, callback) {
   const arrSlice = [];
-  for (elm of array){
-    if(callback(elm)){
+  for (let elm of array) {
+    if (callback(elm)) {
       return arrSlice;
     }
-    arrSlice.push(elm)
+    arrSlice.push(elm);
   }
   return arrSlice;
 };
