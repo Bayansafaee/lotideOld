@@ -14,6 +14,9 @@ const findKey = (object, cb) => {
   }
 };
 
+module.exports = findKey;
+
+
 const testObj = {
   "Blue Hill": { stars: 1 },
   "Akaleri": { stars: 3 },

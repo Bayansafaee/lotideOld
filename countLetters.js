@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(string) {
+const countLetters = (string) => {
   const results = {};
   const stringMod = (string.replace(/\s+/g, ''));
   for (const letter in stringMod) {
@@ -18,5 +18,7 @@ const countLetters = function(string) {
   }
   return results;
 };
+
+module.exports = countLetters;
 
 console.log(countLetters("lighthouse in the house"));
